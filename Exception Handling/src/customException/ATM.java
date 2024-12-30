@@ -2,7 +2,7 @@ package customException;
 
 import java.util.Scanner;
 
-import javax.naming.InsufficientResourcesException;
+
 
 
 public class ATM {
@@ -17,9 +17,9 @@ public class ATM {
 		}
 		else {
 			try {
-				throw new InsufficientResourcesException();
+				throw new InSufficientBalance();
 			}
-			catch(InsufficientResourcesException obj) {
+			catch(InSufficientBalance obj) {
 				System.out.println("InSufficient Balance!!! :(");
 			}
 		}
